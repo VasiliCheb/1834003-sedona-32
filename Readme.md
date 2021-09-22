@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Василий Чеботарев](https://up.htmlacademy.ru/htmlcss/32/user/1834003).
-* Наставник: Сергей Артёмов.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
