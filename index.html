@@ -8,10 +8,14 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <div class="navigation-logo_sedona">
+          <a class="navigation-link-logo_sedona" href="index.html" aria-current="page">
+            <img class="logo_sedona-img" src="#" alt="Логотип города Седона">
+          </a>
+        </div>
+        <ul class="navigation-list">          
           <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
-             <!--Уместна ссылка заглушка - находимся на текущей странице. На других страницах вставить href="index.html"-->
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>             
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
@@ -19,13 +23,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
-        </ul>
-        <div class="navigation-logo_sedona">
-          <a class="navigation-link-logo_sedona">
-            <!--Уместна ссылка заглушка - находимся на текущей странице. На других страницах вставить href="index.html"-->
-          <img class="logo_sedona-img" src="" alt="Логотип города Седона">
-        </a>
-        </div>
+        </ul>        
         <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -38,7 +36,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button><a class="navigation-link" href="#"></a>Хочу сюда!</button>
+            <a class="button navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -47,49 +45,45 @@
     <main class="main-index">
       <h1 class="visually-hidden">Городок Седона</h1>
       <section class="welcome">
-        <img class="welcome-sedona" src="" alt="Фон - Приветствие города Седона">
+        <img class="welcome-sedona" src="#" alt="Фон - Приветствие города Седона">
         <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages-list">
+        <ol class="advantages-list">
           <li class="advantages-item">
-          <h3 class="advantages-title">Настоящий<br>городок</h3>
-          <span>— №1 —</span>
+          <h3 class="advantages-title">Настоящий<br>городок</h3>          
           <p class="advantages-description">Седона — не аттракцион<br>для туристов, там течёт<br>своя жизнь</p>
-            <img class="advantages-img1" src="" alt="Обычный дворик Седоны с видом на горы в солнечный день">
-          </li>
-          <li class="advantages-item icon">
-            <a class="advantages-link icon1" href="#">
-              <span class="visually-hidden">Домик</span>
-            </a>
-            <h3 class="advantages-title icon">Жильё</h3>
-            <p class="advantages-description icon">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-          </li>
-          <li class="advantages-item icon">
-            <a class="advantages-link icon2" href="#">
-              <span class="visually-hidden">Гамбургер</span>
-            </a>
-            <h3 class="advantages-title icon">Еда</h3>
-            <p class="advantages-description icon">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
-          </li>
-          <li class="advantages-item icon">
-            <a class="advantages-link icon3" href="#">
-              <span class="visually-hidden">Подарочная коробка</span>
-            </a>
-            <h3 class="advantages-title icon">Сувениры</h3>
-            <p class="advantages-description icon">Не только китайского,<br>но и настоящего местного<br>производства!</p>
-          </li>
+            <img class="advantages-img1" src="#" alt="Обычный дворик Седоны с видом на горы в солнечный день">
+            <ul class=advantages-add-list>
+              <li class="advantages-add-item icon">
+                <a class="advantages-link icon1" href="#">
+                  <h3 class="advantages-add-title icon">Жильё</h3>             
+                </a>                        
+                <p class="advantages-add-description icon">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              </li>
+              <li class="advantages-add-item icon">
+                <a class="advantages-link icon2" href="#">
+                  <h3 class="advantages-add-title icon">Еда</h3>              
+                </a>                         
+                <p class="advantages-add-description icon">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+              </li>
+              <li class="advantages-add-item icon">
+                <a class="advantages-link icon3" href="#">
+                  <h3 class="advantages-add-title icon">Сувениры</h3>              
+                </a>                            
+                <p class="advantages-add-description icon">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+              </li>
+              </ul>                    
+          </li>          
           <li class="advantages-item">
-            <img class="advantages-img2" src="" alt="Шикарный вид на горы и каньоны, на природный, каменный, горный - мост дьявола">
+            <img class="advantages-img2" src="#" alt="Шикарный вид на горы и каньоны, на природный, каменный, горный - мост дьявола">
             <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
-            <span>— №2 —</span>
             <p class="advantages-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая<br>площадь</h3>
-            <span>— №3 —</span>
             <p class="advantages-description">Все достопримечательности<br>находятся очень близко</p>
           </li>
           <li class="advantages-item">
@@ -99,17 +93,15 @@
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Мало<br>туристов</h3>
-            <span>— №5 —</span>
             <p class="advantages-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
           </li>
-        </ul>
+        </ol>
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <h3 class="search-title">Заинтересовались?</h3>
         <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button><a class="search-link" href="#"></a>ПОИСК ГОСТИНИЦЫ В седоне</button>
-        <!--Странно скопировало текст "ПОИСК ГОСТИНИЦЫ В седоне" - что то не так с регистром???-->
+        <a class="button search-link" href="#">Поиск гостиницы в Седоне</a>        
       </section>
       <section class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
@@ -129,6 +121,7 @@
 
     <footer class="page-footer">
       <section class="footer-social">
+        <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button twitter-button" href="#">
@@ -152,8 +145,8 @@
       </address>
       <div class="footer-logo_htmlacademy">
         <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="logo_htmlacademy-img" src="" alt="HTML Academy">
-      </a>
+          <img class="logo_htmlacademy-img" src="#" alt="HTML Academy">
+        </a>
       </div>
     </footer>
    
