@@ -1,24 +1,40 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
 body {
   width: 1280px;
-background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .welcome {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   background-image: url("../image/index-background-welcome-sedona.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
 }
 
 .subscription {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   background-image: url("../image/index-background-subscription.jpg");
   background-size: 1200px 411px;
   background-repeat: no-repeat;
 }
 
 .main-filter-catalog {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   background-image: url("../image/catalog/catalog-background-filte.jpg");
   background-size: 1200px 408px;
   background-repeat: no-repeat;
