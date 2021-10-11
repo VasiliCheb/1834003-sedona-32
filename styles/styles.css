@@ -14,13 +14,18 @@
   font-display: swap;
 }
 
+html {
+  background-color: #f2f2f2;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  width: 1280px;
+  width: 1200px;
+  margin: 0 auto;
   color: #333333;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .button {
@@ -35,7 +40,6 @@ body {
 
 /*Heder*/
 .main-header {
-  width: 1200px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -66,7 +70,6 @@ body {
 
 /*Главная*/
 .welcome {
-  width: 1200px;
   background-color: #83b3d3;
   background-image: url("../image/index-background-welcome-sedona.jpg");
   background-size: 1200px 485px;
@@ -91,7 +94,6 @@ body {
 }
 
 .advantages {
-  width: 1200px;
   text-align: center;
 }
 
@@ -103,9 +105,26 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-item {
+  background-color: #e6f0f6;
+}
+
 .block-img {
   color: #ffffff;
   background-color: #83b3d3;
+}
+
+.block-text:nth-of-type(2n+1) {
+  background-color: #f0f6fa;
+}
+
+.advantages-add-list {
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+.advantages-add-item:nth-of-type(2n+1) {
+  background-color: #f0f6fa;
 }
 
 .block-img h3 {
@@ -124,26 +143,7 @@ body {
   text-decoration: none;
 }
 
-.advantages-add-list {
-  list-style-type: none;
-  background-color: #ffffff;
-}
-
-ul .advantages-add-item:nth-of-type(odd) {
-  background-color: #f0f6fa;
-}
-
-ol .advantages-item:nth-last-of-type(1),
-ol .advantages-item:nth-last-of-type(3) {
-  background-color: #f0f6fa;
-}
-
-ol .advantages-item:nth-last-of-type(2) {
-  background-color: #e6f0f6;
-}
-
 .search {
-  width: 1200px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -163,7 +163,6 @@ ol .advantages-item:nth-last-of-type(2) {
 }
 
 .subscription {
-  width: 1200px;
   background-color: #83b3d3;
   background-image: url("../image/index-background-subscription.jpg");
   background-size: 1200px 411px;
@@ -194,31 +193,28 @@ ol .advantages-item:nth-last-of-type(2) {
 
 /*Footer*/
 .page-footer {
-  width: 1200px;
   background-color: #ffffff;
 }
 
 .footer-social-item {
   display: inline;
   list-style-type: none;
+  background-repeat: no-repeat;
 }
 
-ul .footer-social-item:nth-of-type(1) {
+.scl-twitter {
   background-image: url("../image/footer/footer-social-twitter.svg");
   background-size: 18px 15px;
-  background-repeat: no-repeat;
 }
 
-ul .footer-social-item:nth-of-type(2) {
+.scl-facebook {
   background-image: url("../image/footer/footer-social-facebook.svg");
   background-size: 10px 18px;
-  background-repeat: no-repeat;
 }
 
-ul .footer-social-item:nth-of-type(3) {
+.scl-youtube {
   background-image: url("../image/footer/footer-social-youtube.svg");
   background-size: 20px 16px;
-  background-repeat: no-repeat;
 }
 
 .footer-contacts {
@@ -235,7 +231,6 @@ ul .footer-social-item:nth-of-type(3) {
 
 /*Каталог*/
 .main-filter-catalog {
-  width: 1200px;
   background-color: #83b3d3;
   background-image: url("../image/catalog/catalog-background-filte.jpg");
   background-size: 1200px 408px;
@@ -297,7 +292,6 @@ ul .footer-social-item:nth-of-type(3) {
 }
 
 .main-sorting-catalog {
-  width: 1200px;
   background-color: #ffffff;
 }
 
@@ -333,7 +327,6 @@ ul .footer-social-item:nth-of-type(3) {
 }
 
 .product-catalog {
-  width: 1200px;
   background-color: #ffffff;
 }
 
@@ -389,7 +382,6 @@ ul .footer-social-item:nth-of-type(3) {
 }
 
 .pagination {
-  width: 1200px;
   background-color: #ffffff;
 }
 
