@@ -15,10 +15,14 @@
 }
 
 html {
+  height: 100%;
   background-color: #f2f2f2;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -44,8 +48,24 @@ body {
   color: #000000;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation-logo_sedona {
-  text-align: center;
+  order: -1;
+}
+
+.navigation-list,
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  max-width: 520px;
+}
+
+.navigation-list {
+  order: -2;
 }
 
 .navigation-item {
@@ -69,12 +89,18 @@ body {
 }
 
 /*Главная*/
+.main-index {
+  flex-grow: 1;
+}
+
 .welcome {
+  display: flex;
+  flex-direction: column;
   background-color: #83b3d3;
   background-image: url("../image/index-background-welcome-sedona.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
-  text-align: center;
+  align-items: center;
 }
 
 .welcome h2 {
@@ -84,6 +110,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
+  text-align: center;
 }
 
 .welcome p {
@@ -94,7 +121,16 @@ body {
 }
 
 .advantages {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages h3 {
@@ -106,12 +142,22 @@ body {
 }
 
 .advantages-item {
+  min-width: 400px;
   background-color: #e6f0f6;
+  list-style-type: none;
 }
 
 .block-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
   color: #ffffff;
   background-color: #83b3d3;
+}
+
+.wrapper-block-img {
+  margin: auto auto;
 }
 
 .block-text:nth-of-type(2n+1) {
@@ -119,8 +165,15 @@ body {
 }
 
 .advantages-add-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style-type: none;
   background-color: #ffffff;
+}
+
+.advantages-add-item {
+  min-width: 400px;
 }
 
 .advantages-add-item:nth-of-type(2n+1) {
@@ -144,6 +197,8 @@ body {
 }
 
 .search {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   text-align: center;
 }
@@ -157,12 +212,17 @@ body {
 }
 
 .search-link {
+  margin: 0 auto;
+  width: 575px;
+  height: 60px;
   font-size: 20px;
   line-height: 36px;
   background-color: #756257;
 }
 
 .subscription {
+  display: flex;
+  flex-direction: column;
   background-color: #83b3d3;
   background-image: url("../image/index-background-subscription.jpg");
   background-size: 1200px 411px;
@@ -183,6 +243,11 @@ body {
   line-height: 26px;
 }
 
+.subscription-form {
+  display: flex;
+  margin: 0 auto;
+}
+
 .subscription-button {
   width: 200px;
   height: 61px;
@@ -193,7 +258,18 @@ body {
 
 /*Footer*/
 .page-footer {
+  display: flex;
   background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.footer-social {
+  max-width: 240px;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social-item {
@@ -218,6 +294,7 @@ body {
 }
 
 .footer-contacts {
+  min-width: 720px;
   font-size: 40px;
   line-height: 40px;
   font-style: normal;
@@ -227,6 +304,10 @@ body {
 .footer-contacts-phone {
   color: #000000;
   text-decoration: none;
+}
+
+.footer-logo_htmlacademy {
+  max-width: 240px;
 }
 
 /*Каталог*/
