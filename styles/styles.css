@@ -32,6 +32,18 @@ body {
   background-color: #ffffff;
 }
 
+/*Отключение скрытого текста
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+
 .button {
   font-size: 16px;
   line-height: 21px;
@@ -120,6 +132,7 @@ body {
   background-color: #ffffff;
 }
 
+/*Приемущества*/
 .advantages {
   display: flex;
   flex-direction: column;
@@ -196,6 +209,7 @@ body {
   text-decoration: none;
 }
 
+/*Поиск*/
 .search {
   display: flex;
   flex-direction: column;
@@ -220,6 +234,7 @@ body {
   background-color: #756257;
 }
 
+/*Подписка*/
 .subscription {
   display: flex;
   flex-direction: column;
@@ -268,29 +283,37 @@ body {
 }
 
 .footer-social-list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
 .footer-social-item {
-  display: inline;
   list-style-type: none;
-  background-repeat: no-repeat;
 }
 
-.scl-twitter {
+.twitter-button::before {
+  content: "";
+  display: block;
   background-image: url("../image/footer/footer-social-twitter.svg");
-  background-size: 18px 15px;
+  width: 18px;
+  height: 15px;
 }
 
-.scl-facebook {
+.facebook-button::before {
+  content: "";
+  display: block;
   background-image: url("../image/footer/footer-social-facebook.svg");
-  background-size: 10px 18px;
+  width: 10px;
+  height: 18px;
 }
 
-.scl-youtube {
+.youtube-button::before {
+  content: "";
+  display: block;
   background-image: url("../image/footer/footer-social-youtube.svg");
-  background-size: 20px 16px;
+  width: 20px;
+  height: 16px;
 }
 
 .footer-contacts {
@@ -310,7 +333,7 @@ body {
   max-width: 240px;
 }
 
-/*Каталог*/
+/*Каталог Фильтры*/
 .main-filter-catalog {
   background-color: #83b3d3;
   background-image: url("../image/catalog/catalog-background-filte.jpg");
@@ -413,9 +436,11 @@ body {
   background-color: transparent;
 }
 
+/*Каталог Сортировка*/
 .main-sorting-catalog {
   display: flex;
   max-width: 1057px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -438,24 +463,31 @@ body {
   line-height: 23px;
 }
 
-.button-rectangles {
+.button-rectangles::before {
+  content: "";
+  display: block;
   background-image: url("../image/catalog/catalog-sorting-rectangles.svg");
-  background-size: 16px 14px;
-  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
 }
 
-.button-card {
+.button-card::before {
+  content: "";
+  display: block;
   background-image: url("../image/catalog/catalog-sorting-card.svg");
-  background-size: 16px 14px;
-  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
 }
 
-.button-list {
+.button-list::before {
+  content: "";
+  display: block;
   background-image: url("../image/catalog/catalog-sorting-list.svg");
-  background-size: 16px 14px;
-  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
 }
 
+/* Каталог Карточки товара*/
 .product-catalog {
   display: flex;
   flex-direction: column;
@@ -520,6 +552,7 @@ body {
   border-color: #83b3d3;
 }
 
+/*Каталог Пагинация*/
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -567,8 +600,10 @@ body {
   line-height: 23px;
 }
 
-
+/*Каталог Подписка*/
 .subscription.catalog {
+  min-width: 800px;
+  margin: 0 auto;
   background-image: none;
   background-color: #ffffff;
   color: #333333;
