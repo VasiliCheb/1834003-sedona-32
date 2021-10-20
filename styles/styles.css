@@ -115,8 +115,7 @@ body {
 .button.navigation-link {
   display: block;
   width: 160px;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding: 8px 0;
   margin: 0 13px;
   font-size: 16px;
   line-height: 21px;
@@ -574,6 +573,7 @@ body {
   margin: 0 auto;
   padding-top: 44px;
   padding-bottom: 42px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .quantity-catalog {
@@ -641,7 +641,7 @@ body {
 .product-catalog {
   display: flex;
   flex-direction: column;
-  width: 1057px;
+  width: 1056px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -649,10 +649,23 @@ body {
 .product-list-catalog {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .product-card-catalog {
-  list-style-type: none;
+  display: grid;
+  grid-template-rows: 28px min-content auto 31px min-content 30px;
+  grid-template-columns: 180px 36px 159px 160px 1fr 160px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card-image-link {
+  grid-row: 2 / -2;
+  grid-column: 1 / 2;
+}
+
+.product-card-image {
+  object-fit: contain;
 }
 
 .product-card-title {
@@ -660,10 +673,26 @@ body {
   font-weight: 700;
   line-height: 31px;
   color: #000000;
+  margin: 0;
 }
 
 .product-card-link {
   text-decoration: none;
+}
+
+.card-title-link {
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+}
+
+.product-card-type {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+.product-card-price {
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
 }
 
 .product-card-type,
@@ -672,25 +701,52 @@ body {
   font-weight: 400;
   line-height: 23px;
   color: #000000;
+  margin: 0;
 }
 
 .details-card-button {
+  display: block;
+  width: 151px;
   background-color: #756257;
+  border-radius: 4px;
+  padding: 8px 0;
+  grid-row: -2 / -3;
+  grid-column: 3 / 4;
 }
 
 .favorites-card-button {
+  display: block;
+  width: 160px;
   background-color: #83b3d3;
+  border-radius: 4px;
+  padding: 8px 0;
+  grid-row: -2 / -3;
+  grid-column: 4 / 5;
 }
 
 .button.product-current {
   background-color: #7db54f;
 }
 
+.stars {
+  width: 118px;
+  height: 17px;
+  grid-row: 2 / 3;
+  grid-column: -1 / -2;
+}
+
 .rating-product-card {
+  display: block;
+  width: 160px;
   font-size: 16px;
   line-height: 21px;
+  text-transform: uppercase;
   background-color: #f2f2f2;
+  border-radius: 4px;
   text-align: center;
+  padding: 8px 0;
+  grid-row: -2 / -3;
+  grid-column: -1 / -2;
 }
 
 .product-show-more {
