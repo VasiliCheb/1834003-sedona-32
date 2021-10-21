@@ -58,6 +58,7 @@ body {
 .main-header {
   background-color: #ffffff;
   color: #000000;
+  margin-bottom: -5px;
 }
 
 .navigation {
@@ -71,6 +72,7 @@ body {
 
 .navigation-logo_sedona {
   order: -1;
+  z-index: 1;
 }
 
 .logo_sedona-img {
@@ -444,32 +446,33 @@ body {
 
 /*Каталог Фильтры*/
 .main-filter-catalog {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: min-content min-content auto;
   background-color: #83b3d3;
   background-image: url("../image/catalog/catalog-background-filte.jpg");
   background-size: 1200px 408px;
   background-repeat: no-repeat;
   color: #ffffff;
+  padding: 35px 72px 83px 71px;
 }
 
 .main-catalog-title {
   display: block;
-  width: 528px;
-  margin-left: 71px;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+  grid-row: 1 / 2;
 }
 
 .breadcrumbs {
   display: flex;
-  width: 131px;
-  margin: 0 61px;
+  margin: 0;
   padding: 0;
+  grid-row: 2 / 3;
+  margin-top: -15px;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs-item {
@@ -483,6 +486,13 @@ body {
   color: #ffffff;
   text-decoration: none;
   padding: 5px 10px;
+}
+
+.filter-catalog {
+  grid-row: -1 / -2;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto auto;
+  column-gap: 7px;
 }
 
 .filter-catalog-title {
@@ -504,13 +514,6 @@ body {
   margin-top: 13px;
 }
 
-.filter-catalog {
-  display: flex;
-  width: 1057px;
-  margin-top: 40px;
-  margin-bottom: 83px;
-}
-
 .filter-catalog-group {
   margin: 0;
   padding: 0;
@@ -518,18 +521,19 @@ body {
 }
 
 .filter-catalog-infrastructure {
-  min-width: 150px;
-  margin-left: 71px;
+  grid-column: 1 / 2;
+  margin-right: 61px;
 }
 
 .filter-catalog-housing {
-  min-width: 145px;
-  margin-left: 67px;
+  grid-column: 2 / 3;
+  margin-right: 65px;
 }
 
 .filter-catalog-price {
-  width: 287px;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  grid-column: -2 / -3;
 }
 
 .filter-catalog-input {
@@ -537,11 +541,12 @@ body {
 }
 
 .button-filter-group {
-  width: 160px;
-  margin-right: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column: -1 / -2;
   margin-left: 81px;
 }
-
 
 .button-filter-submit {
   width: 160px;
@@ -549,20 +554,21 @@ body {
   font-size: 16px;
   line-height: 21px;
   background-color: #83b3d3;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   border: none;
   border-radius: 4px;
 }
 
 .button-filter-reset {
   width: 160px;
-  height: 23px;
+  height: 49px;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   text-transform: none;
   border: none;
   background-color: transparent;
+  margin-bottom: -13px;
 }
 
 /*Каталог Сортировка*/
@@ -654,18 +660,26 @@ body {
 
 .product-card-catalog {
   display: grid;
-  grid-template-rows: 28px min-content auto 31px min-content 30px;
-  grid-template-columns: 180px 36px 159px 160px 1fr 160px;
+  grid-template-rows: min-content auto auto min-content;
+  grid-template-columns: 208px auto auto 1fr auto;
+  column-gap: 8px;
+  padding-top: 28px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .card-image-link {
-  grid-row: 2 / -2;
+  display: flex;
+  background-color: #83b3d3;
+  grid-row: 1 / -1;
   grid-column: 1 / 2;
+  margin-right: 28px;
 }
 
 .product-card-image {
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .product-card-title {
@@ -681,18 +695,18 @@ body {
 }
 
 .card-title-link {
-  grid-row: 2 / 3;
-  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  grid-column: 2 / -2;
 }
 
 .product-card-type {
-  grid-row: 3 / 4;
-  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .product-card-price {
-  grid-row: 3 / 4;
-  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
 }
 
 .product-card-type,
@@ -704,49 +718,53 @@ body {
   margin: 0;
 }
 
-.details-card-button {
-  display: block;
-  width: 151px;
-  background-color: #756257;
+.details-card-button,
+.favorites-card-button,
+.rating-product-card {
+  display: grid;
+  place-items: center;
   border-radius: 4px;
-  padding: 8px 0;
-  grid-row: -2 / -3;
-  grid-column: 3 / 4;
+  padding-top: 9px;
+  padding-bottom: 7px;
+}
+
+.details-card-button {
+  background-color: #756257;
+  grid-row: -1 / -2;
+  grid-column: 2 / 3;
+  padding-left: 31px;
+  padding-right: 32px;
 }
 
 .favorites-card-button {
-  display: block;
-  width: 160px;
   background-color: #83b3d3;
-  border-radius: 4px;
-  padding: 8px 0;
-  grid-row: -2 / -3;
-  grid-column: 4 / 5;
+  grid-row: -1 / -2;
+  grid-column: 3 / 4;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .button.product-current {
   background-color: #7db54f;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .stars {
-  width: 118px;
-  height: 17px;
-  grid-row: 2 / 3;
+  background-color: #7db54f; /* Нужно будет удалить - Визуализация звёзд*/
+  grid-row: 1 / 2;
   grid-column: -1 / -2;
 }
 
 .rating-product-card {
-  display: block;
-  width: 160px;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  border-radius: 4px;
-  text-align: center;
-  padding: 8px 0;
-  grid-row: -2 / -3;
+  grid-row: -1 / -2;
   grid-column: -1 / -2;
+  padding-left: 33px;
+  padding-right: 32px;
 }
 
 .product-show-more {
