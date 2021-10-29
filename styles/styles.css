@@ -52,8 +52,7 @@ body {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
+  text-decoration:none;
 }
 
 /*Heder*/
@@ -73,13 +72,11 @@ body {
 
 .navigation-logo_sedona {
   order: -1;
-
 }
 
 .logo_sedona-img {
   padding: 0 80px;
   margin-bottom: -5px;
-  cursor: pointer;
 }
 
 .navigation-link-logo_sedona:focus {
@@ -178,7 +175,7 @@ body {
 .nav-icon-heart::after {
   position: absolute;
   content: "";
-  display: block;
+  display: grid;
   mask-image: url("../image/heder/navigation-heart.svg");
   width: 18px;
   height: 17px;
@@ -187,6 +184,22 @@ body {
   background: currentColor;
   z-index: -1;
   transform: translateY(-18px);
+}
+
+.nav-icon-heart::before {
+  content: "12";
+  display: grid;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+  color: #ffffff;
+  width: 19px;
+  height: 19px;
+  background-color: #7DB550;
+  border-radius: 50%;
+  place-items: center;
+  transform: translate(11px, -11px);
+  z-index: 2;
 }
 
 .icon-link:focus {
@@ -205,22 +218,6 @@ body {
   outline: none;
   color: #756257;
   opacity: 0.3;
-}
-
-.nav-icon-heart::before {
-  content: "12";
-  display: grid;
-  font-family: "PT Sans", sans-serif;
-  font-size: 10px;
-  line-height: 13px;
-  color: #ffffff;
-  width: 19px;
-  height: 19px;
-  background-color: #7DB550;
-  border-radius: 50%;
-  place-items: center;
-  transform: translate(11px, -11px);
-  z-index: 1;
 }
 
 .button.navigation-link {
@@ -326,11 +323,6 @@ body {
 
 }
 
-.advantages-description {
-  margin: 0;
-
-}
-
 .advantages-img1,
 .advantages-img2 {
   margin: 0;
@@ -348,18 +340,17 @@ body {
   counter-reset: counter-container;
 }
 
-.advantages-description::before {
+.advantages-title::before {
   counter-increment: counter-container;
   content: "— №" counter(counter-container) " —";
   position: absolute;
   font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  width: 65px;
-  height: 21px;
   left: 50%;
   margin-left: -33px;
-  transform: translateY(-51px);
+  transform: translateY(85px);
 }
 
 .block-img {
@@ -409,7 +400,6 @@ body {
 
 .advantages-add-item p {
   color: #333333;
-  margin: 0;
 }
 
 .advantages-link {
@@ -788,7 +778,7 @@ body {
 
 .breadcrumbs {
   display: flex;
-  margin: 0;
+  margin-left: -10px;
   padding: 0;
   grid-row: 2 / 3;
   margin-top: -15px;
@@ -806,6 +796,19 @@ body {
   color: #ffffff;
   text-decoration: none;
   padding: 5px 10px;
+}
+
+.link-home::before {
+  content: "";
+  display: block;
+  background-image: url("../image/catalog/catalog-breadcrumbs-home.svg");
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-home {
+  margin-top: 5px;
 }
 
 .filter-catalog {
