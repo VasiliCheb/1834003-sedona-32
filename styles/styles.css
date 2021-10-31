@@ -1275,12 +1275,10 @@ body {
   background-position: center;
   background-image: url("../image/catalog/catalog-card-star.svg");
   /*background-size: 24px 17px;*/
-  width: 24px;
-  height: 17px;
   background-repeat: space;
-  /* width: 124px;
+  width: 124px;
   height: 17px;
-  justify-self: center;
+  /*justify-self: center;
   align-self: center;*/
 }
 
