@@ -1256,20 +1256,28 @@ body {
   background-position: center;
   background-image: url("../image/catalog/catalog-card-star.svg");
   background-repeat: space;
-  width: auto;
+  margin: 0 auto;
   height: 17px;
 }
 
-.stars-count-4 {
+.stars-count-5::before {
+  width: 124px;
+}
+
+.stars-count-4::before {
   width: 99px;
 }
 
-.stars-count-3 {
+.stars-count-3::before {
   width: 74px;
 }
 
-.stars-count-2 {
+.stars-count-2::before {
   width: 49px;
+}
+
+.stars-count-1::before {
+  width: 24px;
 }
 
 .rating-product-card {
