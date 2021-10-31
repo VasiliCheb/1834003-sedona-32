@@ -52,7 +52,7 @@ body {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /*Heder*/
@@ -195,7 +195,7 @@ body {
   color: #ffffff;
   width: 19px;
   height: 19px;
-  background-color: #7DB550;
+  background-color: #7db550;
   border-radius: 50%;
   place-items: center;
   transform: translate(11px, -11px);
@@ -235,7 +235,6 @@ body {
 .button.navigation-link:focus {
   background-color: #615048;
   outline: 3px solid #83b3d3;
-  outline-offset: 0;
 }
 
 .button.navigation-link:hover {
@@ -279,7 +278,7 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
   margin-top: 82px;
-  margin-bottom: 0;;
+  margin-bottom: 0;
   padding-top: 63px;
 }
 
@@ -307,6 +306,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  counter-reset: counter-container;
 }
 
 .advantages h3 {
@@ -320,7 +320,6 @@ body {
 .advantages-title {
   margin-top: 98px;
   margin-bottom: 80px;
-
 }
 
 .advantages-img1,
@@ -334,10 +333,6 @@ body {
   min-height: 384px;
   background-color: #e6f0f6;
   list-style-type: none;
-}
-
-.advantages-list {
-  counter-reset: counter-container;
 }
 
 .advantages-title::before {
@@ -460,7 +455,7 @@ body {
 }
 
 .advantages-link:active {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   opacity: 0.3;
 }
 
@@ -503,7 +498,6 @@ body {
 .search-link:focus {
   background-color: #615048;
   outline: 3px solid #83b3d3;
-  outline-offset: 0;
 }
 
 .search-link:hover {
@@ -551,6 +545,22 @@ body {
   margin: 0 auto;
 }
 
+
+.search-link:focus {
+  background-color: #615048;
+  outline: 3px solid #83b3d3;
+}
+
+.search-link:hover {
+  background-color: #615048;
+}
+
+.search-link:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #615048;
+}
+
 .field {
   display: block;
   width: 578px;
@@ -564,6 +574,20 @@ body {
   padding: 0 0 0 22px;
   background-color: #f2f2f2;
 }
+
+.field:focus {
+  background-color: #e5e5e5;
+  outline: 3px solid #83b3d3;
+}
+
+.field:hover {
+  background-color: #e5e5e5;
+}
+
+/*.field:active {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}*/
 
 .subscription-email {
   margin: 0;
@@ -582,19 +606,18 @@ body {
 }
 
 .subscription-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: 3px solid #756257;
-  outline-offset: 0;
 }
 
 .subscription-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .subscription-button:active {
   outline: none;
   color: rgba(255, 255, 255, 0.3);
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 /*Footer*/
@@ -671,18 +694,18 @@ body {
 }
 
 .scl-button:focus {
-  color: #68A2CA;
+  color: #68a2ca;
   outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 
 .scl-button:hover {
-  color: #68A2CA;
+  color: #68a2ca;
 }
 
 .scl-button:active {
   outline: none;
-  color: #68A2CA;
+  color: #68a2ca;
   opacity: 0.3;
 }
 
@@ -924,11 +947,11 @@ body {
 
 .button-filter-submit:focus {
   outline: 3px solid #ffffff;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-filter-submit:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-filter-submit:active {
@@ -1091,16 +1114,13 @@ body {
 
 .card-title-link {
   color: #000000;
+  grid-row: 1 / 2;
+  grid-column: 2 / -2;
+  margin-right: auto;
 }
 
 .product-card-link {
   text-decoration: none;
-}
-
-.card-title-link {
-  grid-row: 1 / 2;
-  grid-column: 2 / -2;
-  margin-right: auto;
 }
 
 .card-image-link:focus {
@@ -1197,12 +1217,12 @@ body {
 
 .favorites-card-button:focus {
   outline: 3px solid #756257;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .product-current:focus {
   outline: 3px solid #756257;
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .details-card-button:hover {
@@ -1211,12 +1231,12 @@ body {
 
 .favorites-card-button:hover {
   outline: 1px solid #756257;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .product-current:hover {
   outline: none;
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .details-card-button:active {
@@ -1227,12 +1247,12 @@ body {
 
 .favorites-card-button:active {
   outline: 1px solid #756257;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   opacity: 0.3;
 }
 
 .product-current:active {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
   outline: none;
   opacity: 0.3;
 }
@@ -1240,28 +1260,41 @@ body {
 .stars {
   grid-row: 1 / 2;
   grid-column: -1 / -2;
-  display: block;
-  background-position: center;
-  background-image: url("../image/catalog/catalog-card-star.svg");
-  background-size: 18px 17px;
-  background-repeat:space;
-  width: 107px;
+  width: 124px;
   height: 17px;
   justify-self: center;
   align-self: center;
+  /*background-color: #68a2ca;*/
+}
+
+.stars::before {
+  content: "";
+  /*grid-row: 1 / 2;
+  grid-column: -1 / -2;*/
+  display: block;
+  background-position: center;
+  background-image: url("../image/catalog/catalog-card-star.svg");
+  /*background-size: 24px 17px;*/
+  width: 24px;
+  height: 17px;
+  background-repeat: space;
+  /* width: 124px;
+  height: 17px;
+  justify-self: center;
+  align-self: center;*/
 }
 
 .product-card-catalog:nth-of-type(1) .stars {
-  width: 89px;
+  width: 99px;
 }
 
 .product-card-catalog:nth-of-type(2) .stars {
-  width: 71px;
+  width: 74px;
 }
 
 .product-card-catalog:nth-of-type(3) .stars,
 .product-card-catalog:nth-of-type(4) .stars {
-  width: 53px;
+  width: 49px;
 }
 
 .rating-product-card {
@@ -1290,17 +1323,17 @@ body {
 
 .product-show-more:focus {
   outline: 3px solid #756257;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .product-show-more:hover {
   outline: 1px solid #756257;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .product-show-more:active {
   outline: 1px solid #756257;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   opacity: 0.3;
 }
 
@@ -1344,16 +1377,16 @@ body {
 .pagination-link:focus {
   outline: 3px solid #756257;
   border-radius: 4px;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active {
   outline: none;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   opacity: 0.3;
 }
 
