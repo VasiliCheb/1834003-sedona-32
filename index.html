@@ -35,7 +35,44 @@
             <a class="navigation-link icon-link nav-icon-heart" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
+            <!--Поповер-->
+            <div class="wrapper-popover">
+              <span class="visually-hidden">Хвост поповера</span>
+              <div class="popover popover-cart">
+                <h2 class="visually-hidden">Список избранного</h2>
+                <div class="popover-content">
+                  <ul class="popover-items-list">
+                    <li class="popover-cart-item">
+                      <a class="popover-cart-link" href="#">
+                        <div class="wrapper-product-popover">
+                          <img class="popover-product-image" src="image/catalog/catalog-hotel-desert.jpg" width="48" height="48" alt="Аватар мотеля Десерт Кваил">
+                          <b class="popover-product-title">Desert Quail Inn</b>
+                          <span class="popover-product-type">Мотель</span>
+                        </div>
+                      </a>
+                      <button type="button" class="popover-product-delete button">
+                        <span class="visually-hidden">Удаление из избранного</span>
+                      </button>
+                    </li>
+                    <li class="popover-cart-item">
+                      <a class="popover-cart-link" href="#">
+                        <div class="wrapper-product-popover">
+                          <img class="popover-product-image" src="image/catalog/catalog-hotel-villas.jpg" width="48" height="48" alt="Аватар апартаментов Десерт Кваил">
+                          <b class="popover-product-title">Villas at Poco Diablo</b>
+                          <span class="popover-product-type">Апартаменты</span>
+                        </div>
+                      </a>
+                      <button type="button" class="popover-product-delete button">
+                        <span class="visually-hidden">Удаление из избранного</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <a class="favorites-popover-button" href="#">Все избранные</a>
+              </div>
+            </div>
           </li>
+          <!--Шапка навигация далее-->
           <li class="navigation-item">
             <a class="button navigation-link" href="#">Хочу сюда!</a>
           </li>
@@ -156,6 +193,70 @@
         </a>
       </div>
     </footer>
+
+    <!--Модальное окно-->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="apartments-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="apartments-modal-label arrival-label" for="apartments-for">Дата заезда:</label>
+            <div class="wrapper-modal-data wrapper-for-date">
+              <input class="field-modal field-for" type="text" id="apartments-for" name="apartments-for" value="27 апреля 2020" placeholder="Укажите дату">
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Показать календарь</span>
+              </button>
+            </div>
+            <i class="message-modal message-arrival message-alarma">Мы не можем отправить вас в прошлое.</i>
+            <label class="apartments-modal-label departure-label" for="apartments-of">Дата выезда:</label>
+            <div class="wrapper-modal-data wrapper-of-date">
+              <input class="field-modal field-of" type="text" id="apartments-of" name="apartments-of" value="1 сентября 2021" placeholder="Укажите дату">
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Показать календарь</span>
+              </button>
+            </div>
+            <i class="message-modal message-departure message-information">На эти даты есть свободные номера. Пока есть.</i>
+            <label class="apartments-modal-label аdults-label" for="grown-up">Взрослые:</label>
+            <div class="wrapper-modal-persons wrapper-аdults-persons">
+              <button class="button-persons button-decrease" type="button">
+                <span class="visually-hidden">Удалить</span>
+              </button>
+              <input class="field-modal number-persons аdults-input" type="number" id="grown-up" value="2" name="аdults">
+              <button class="button-persons button-increase" type="button">
+                <span class="visually-hidden">Добавить</span>
+              </button>
+            </div>
+            <div class="info-modal-block">
+              <label class="apartments-modal-label children-label" for="babies">Дети:</label>
+              <button class="info-modal" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+              <!--Поповер модального окна-->
+              <div class="wrapper-popover-modal">
+                <span class="visually-hidden">Хвост поповера</span>
+                <div class="popover-modal popover-info">
+                  <p class="popover-modal-description">Укажите количество детей,<br>которые будут с вами, возраст<br>которых от 6 до 18 лет. Дети<br>до 6 лет размещаются<br>бесплатно.</p>
+                </div>
+              </div>
+            <!--Модальное окно продолжение-->
+            </div>
+            <div class="wrapper-modal-persons wrapper-children-persons">
+              <button class="button-persons button-decrease" type="button">
+                <span class="visually-hidden">Удалить</span>
+              </button>
+              <input class="field-modal number-persons children-input" type="number" id="babies" value="1" name="children">
+              <button class="button-persons button-increase" type="button">
+                <span class="visually-hidden">Добавить</span>
+              </button>
+            </div>
+            <button class="button apartments-modal-submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>
