@@ -1813,6 +1813,11 @@ body {
   color: #000000;
 }
 
+.sorting-type-catalog {
+  position: relative;
+  box-sizing: border-box;
+}
+
 .sorting-details-summary {
   position: relative;
   display: grid;
@@ -1839,10 +1844,52 @@ body {
   background-repeat: no-repeat;
 }
 
-.sorting-type-cheap,
-.sorting-type-expensive { /*позже нужно сделать и оформить выпадающий список*/
+.sorting-type-catalog[open] > .sorting-details-summary::before {
+  transform: scale(-1);
+}
+
+.details-summary-link {
   position: absolute;
-  z-index: -1;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 281px;
+  margin-left: 3px;
+  align-self: center;
+  background-color: #83b3d3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline-offset: -6px;
+  outline: 3px solid #ffffff;
+}
+
+.details-link-type {
+  color: #ffffff;
+  align-self: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  padding: 5px 50px;
+}
+
+.details-link-type:focus {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.details-link-type:not(:focus-visible) {
+  color: #ffffff;
+  outline: initial;
+}
+
+.details-link-type:focus-visible {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.details-link-type:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .sorting-details-summary:focus {
@@ -2356,6 +2403,7 @@ body {
 }
 
 .pagination-sorting-quantity {
+  position: relative;
   align-self: center;
   margin-left: 51px;
 }
@@ -2385,10 +2433,53 @@ body {
   background-repeat: no-repeat;
 }
 
-.pagination-link-four,
-.pagination-link-ten { /*позже нужно сделать и оформить выпадающий список*/
+.pagination-sorting-quantity[open] > .sorting-quantity-summary::before {
+  transform: scale(-1);
+}
+
+.sorting-summary-link {
   position: absolute;
-  z-index: -1;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 154px;
+  right: 50%;
+  margin-right: -77px;
+  align-self: center;
+  background-color: #83b3d3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline-offset: -6px;
+  outline: 3px solid #ffffff;
+}
+
+.details-link-quantity {
+  color: #ffffff;
+  align-self: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  padding: 5px 50px;
+}
+
+.details-link-quantity:focus {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.details-link-quantity:not(:focus-visible) {
+  color: #ffffff;
+  outline: initial;
+}
+
+.details-link-quantity:focus-visible {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.details-link-quantity:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .sorting-quantity-summary:focus {
