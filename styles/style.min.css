@@ -1,0 +1,13 @@
+.nav-icon-search::before {
+  content: "";
+  display: block;
+  mask-image: url("../image/heder/navigation-search.svg");
+  mask-image: url("../image/heder/navigation-search.svg");
+  width: 18px;
+  height: 18px;
+  mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-position: center;
+  background: currentColor;
+}
