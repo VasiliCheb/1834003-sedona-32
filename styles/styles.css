@@ -1134,6 +1134,7 @@ img {
 }
 
 .subscription-button {
+  display: grid;
   min-width: 200px;
   min-height: 60px;
   background-color: #83b3d3;
@@ -1143,6 +1144,7 @@ img {
   border-top-right-radius: 10px;
   border: none;
   padding: 0;
+  place-items: center;
 }
 
 .subscription-button:focus {
