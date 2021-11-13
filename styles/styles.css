@@ -61,8 +61,8 @@ img {
   text-decoration: none;
 }
 
-/*Heder*/
-.main-heder {
+/*Header*/
+.main-header {
   background-color: #ffffff;
   color: #000000;
   z-index: 1;
@@ -197,7 +197,7 @@ img {
 .nav-icon-search::before {
   content: "";
   display: block;
-  mask-image: url("../image/heder/navigation-search.svg");
+  mask-image: url("../image/header/navigation-search.svg");
   width: 18px;
   height: 18px;
   mask-repeat: no-repeat;
@@ -209,7 +209,7 @@ img {
   position: absolute;
   content: "";
   display: grid;
-  mask-image: url("../image/heder/navigation-heart.svg");
+  mask-image: url("../image/header/navigation-heart.svg");
   width: 18px;
   height: 17px;
   mask-repeat: no-repeat;
@@ -638,7 +638,7 @@ img {
   background-color: #f2f2f2;
   border-radius: 50%;
   border: none;
-  background-image: url("../image/heder/modal-cross-close.svg");
+  background-image: url("../image/header/modal-cross-close.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -854,7 +854,7 @@ img {
   height: 20px;
   background-color: #f2f2f2;
   border: none;
-  background-image: url("../image/heder/modal-date-calendar.svg");
+  background-image: url("../image/header/modal-date-calendar.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -897,7 +897,7 @@ img {
   background-color: #83b3d3;
   border: none;
   border-radius: 50%;
-  background-image: url("../image/heder/modal-info.svg");
+  background-image: url("../image/header/modal-info.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2576,7 +2576,7 @@ img {
 .wrapper-popover::before {
   position: absolute;
   content: "";
-  background-image: url("../image/heder/popover-tail.svg");
+  background-image: url("../image/header/popover-tail.svg");
   width: 20px;
   height: 10px;
   background-repeat: no-repeat;
@@ -2627,7 +2627,7 @@ img {
 }
 
 .popover-product-delete {
-  background-image: url("../image/heder/popover-delete.svg");
+  background-image: url("../image/header/popover-delete.svg");
   width: 36px;
   height: 36px;
   background-size: 16px 16px;
@@ -2791,7 +2791,7 @@ img {
 .wrapper-popover-modal::before {
   position: absolute;
   content: "";
-  background-image: url("../image/heder/popover-modal-tail.svg");
+  background-image: url("../image/header/popover-modal-tail.svg");
   width: 20px;
   height: 9px;
   background-repeat: no-repeat;
