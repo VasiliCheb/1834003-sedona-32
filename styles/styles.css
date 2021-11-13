@@ -1700,8 +1700,8 @@ img {
 
 .range-wrapper-label {
   position: absolute;
-  align-self: center;
   line-height: 23px;
+  align-self: center;
   margin-top: 13px;
   right: 0;
   margin-right: 17px;
