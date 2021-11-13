@@ -62,7 +62,7 @@ img {
 }
 
 /*Heder*/
-.main-header {
+.main-heder {
   background-color: #ffffff;
   color: #000000;
   z-index: 1;
@@ -1201,7 +1201,7 @@ img {
   list-style-type: none;
 }
 
-.scl-button {
+.social-button {
   display: block;
   padding: 49px 15px;
   color: #83b3d3;
@@ -1226,7 +1226,7 @@ img {
   height: 16px;
 }
 
-.scl-button::before {
+.social-button::before {
   content: "";
   display: block;
   mask-repeat: no-repeat;
@@ -1249,29 +1249,29 @@ img {
   margin: 37px 5px;
 }
 
-.scl-button:focus {
+.social-button:focus {
   color: #68a2ca;
   outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
 
-.scl-button:focus:not(:focus-visible) {
+.social-button:focus:not(:focus-visible) {
   color: #83b3d3;
   outline: none;
   outline-offset: revert;
 }
 
-.scl-button:focus-visible {
+.social-button:focus-visible {
   color: #68a2ca;
   outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
 
-.scl-button:hover {
+.social-button:hover {
   color: #68a2ca;
 }
 
-.footer-social-item:active > .scl-button::before {
+.footer-social-item:active > .social-button::before {
   color: rgba(104, 162, 202, 0.3);
 }
 
