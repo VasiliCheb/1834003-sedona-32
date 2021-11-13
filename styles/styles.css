@@ -2308,11 +2308,13 @@ img {
 }
 
 .product-show-more {
+  display: grid;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   width: 625px;
   height: 55px;
+  place-items: center;
   margin: 30px auto;
   background-color: #83b3d3;
   border-radius: 4px;
