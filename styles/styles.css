@@ -76,42 +76,42 @@ img {
   margin-bottom: -5px;
 }
 
-.navigation-logo_sedona {
+.navigation-logo-sedona {
   order: -1;
   margin-right: 30px;
 }
 
-.logo_sedona-img {
+.logo-sedona-img {
   padding: 0 80px;
   margin-bottom: -5px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.navigation-link-logo_sedona {
+.navigation-link-logo-sedona {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.navigation-link-logo_sedona:focus {
+.navigation-link-logo-sedona:focus {
   outline: 3px solid #83b3d3;
 }
 
-.navigation-link-logo_sedona:focus:not(:focus-visible) {
+.navigation-link-logo-sedona:focus:not(:focus-visible) {
   outline: none;
 }
 
-.navigation-link-logo_sedona:focus-visible {
+.navigation-link-logo-sedona:focus-visible {
   outline: 3px solid #83b3d3;
 }
 
-.logo_sedona-img:hover {
+.logo-sedona-img:hover {
   outline: 3px solid #83b3d3;
   background-color: #83b3d3;
   outline-offset: 3px;
 }
 
-.navigation-link-logo_sedona:active {
+.navigation-link-logo-sedona:active {
   opacity: 0.3;
 }
 
@@ -1319,7 +1319,7 @@ img {
   opacity: 0.3;
 }
 
-.footer-logo_htmlacademy {
+.footer-logo-htmlacademy {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -1334,7 +1334,7 @@ img {
   border-radius: 10px;
 }
 
-.logo_htmlacademy-svg {
+.logo-htmlacademy-svg {
   fill: #000000;
 }
 
@@ -1353,23 +1353,23 @@ img {
   outline-offset: -3px;
 }
 
-.footer-htmlacademy-link:focus .logo_htmlacademy-svg {
+.footer-htmlacademy-link:focus .logo-htmlacademy-svg {
   fill: #756257;
 }
 
-.footer-htmlacademy-link:focus:not(:focus-visible) .logo_htmlacademy-svg {
+.footer-htmlacademy-link:focus:not(:focus-visible) .logo-htmlacademy-svg {
   fill: #000000;
 }
 
-.footer-htmlacademy-link:focus-visible .logo_htmlacademy-svg {
+.footer-htmlacademy-link:focus-visible .logo-htmlacademy-svg {
   fill: #756257;
 }
 
-.footer-htmlacademy-link:hover .logo_htmlacademy-svg {
+.footer-htmlacademy-link:hover .logo-htmlacademy-svg {
   fill: #756257;
 }
 
-.footer-htmlacademy-link:active:active .logo_htmlacademy-svg {
+.footer-htmlacademy-link:active:active .logo-htmlacademy-svg {
   fill: #756257;
   opacity: 0.3;
 }
