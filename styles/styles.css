@@ -613,9 +613,9 @@ img {
   z-index: 1;
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -1674,6 +1674,7 @@ img {
   height: 42px;
   padding-left: 18px;
   font: inherit;
+  line-height: 23px;
   color: #ffffff;
   background-color: transparent;
   border: 2px solid #ffffff;
