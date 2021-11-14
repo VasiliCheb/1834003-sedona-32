@@ -392,10 +392,6 @@ img {
   margin-bottom: 79px;
 }
 
-.advantages-description {
-  padding: 0 15px;
-}
-
 .advantages-img1,
 .advantages-img2 {
   margin: 0;
@@ -433,12 +429,19 @@ img {
 
 .wrapper-block-img {
   position: relative;
+  box-sizing: border-box;
   width: 400px;
   margin: 0 auto;
+  padding: 0 75px;
 }
 
 .block-text:nth-of-type(2n+1) {
   background-color: #f0f6fa;
+}
+
+.block-text {
+  box-sizing: border-box;
+  padding: 0 75px;
 }
 
 .advantages-add-list {
@@ -451,9 +454,11 @@ img {
 }
 
 .advantages-add-item {
+  box-sizing: border-box;
   position: relative;
   width: 400px;
   min-height: 384px;
+  padding: 0 75px;
 }
 
 .advantages-add-item:nth-of-type(2n+1) {
@@ -471,7 +476,6 @@ img {
 
 .advantages-add-item p {
   color: #333333;
-  padding: 0 15px;
 }
 
 .advantages-link {
@@ -2151,6 +2155,7 @@ img {
   border-radius: 4px;
   padding-top: 9px;
   padding-bottom: 7px;
+  margin-top: 20px;
 }
 
 .details-card-button {
