@@ -795,8 +795,7 @@ img {
   outline-offset: -2px;
 }
 
-.field-for:not(:placeholder-shown),
-.field-of:not(:placeholder-shown) {
+.field-modal:not(:placeholder-shown) {
   background-color: #ffffff;
   outline: 2px solid #000000;
   outline-offset: -2px;
@@ -1682,9 +1681,9 @@ img {
 
 .filter-catalog-input {
   margin-top: 18px;
-  width: 120px;
+  width: 121px;
   height: 42px;
-  padding-left: 18px;
+  padding-left: 17px;
   font: inherit;
   line-height: 23px;
   color: #ffffff;
