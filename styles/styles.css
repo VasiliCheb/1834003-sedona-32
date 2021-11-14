@@ -1748,6 +1748,20 @@ img {
   border-color: #ffffff;
 }
 
+.filter-catalog-input::placeholder {
+  font: inherit;
+  line-height: 23px;
+  color: #ffffff;
+  border: none;
+}
+
+.filter-catalog-input:not(:placeholder-shown) {
+  background-color: #756257;
+  border-color: #ffffff;
+  outline: none;
+  box-shadow: initial;
+}
+
 /*Каталог Фильтры Группа кнопок*/
 .button-filter-group {
   display: flex;
